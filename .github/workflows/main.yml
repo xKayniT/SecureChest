@@ -27,11 +27,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Change directory
-        run: cd SecureChest
-      - name: Check if go.mod exists
-        run: ls -la
-      - id: govulncheck
+      - name: Run govulncheck
+        id: govulncheck
         uses: golang/govulncheck-action@v1
         with:
-           go-version-input: 1.22.11
+          go-version-input: 1.22.11
+          go-package: ./
+          working-directory: SecureChest
