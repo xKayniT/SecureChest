@@ -26,6 +26,7 @@ jobs:
     name: govulncheck
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Check if go.mod exists
         run: ls -la
       - id: govulncheck
