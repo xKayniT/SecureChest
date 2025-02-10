@@ -9,3 +9,7 @@ Hello and welcome to my Github pages. This repository contains a tool named **Se
 - Delete an entry
 
 - Copy the password of a targeted service on the clipboard
+
+You can try it with the following command executed in SecureChest directory:
+
+__go run .__
