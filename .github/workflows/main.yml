@@ -26,6 +26,8 @@ jobs:
     name: govulncheck
     runs-on: ubuntu-latest
     steps:
+      - name: Check if go.mod exists
+        run: ls -la
       - id: govulncheck
         uses: golang/govulncheck-action@v1
         with:
